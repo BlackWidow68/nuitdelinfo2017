@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<!--BASICS-->
+		<title>How to React ?!</title>
+
+		<!--LINK-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortuct icon" href="assets/logo.png">
+
+		<!--FONTS-->
+		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Coustard" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+
+		<!--SCRIPT-->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+		<!--META-->
+		<meta charset="UTF-8">
+
+		<!--STYLE-->
+		<style>
+			.menu:hover {
+				text-decoration: none;
+			}
+
+			#nav {
+				-webkit-box-shadow: 3px 0px 24px 0px rgba(0,0,0,0.75);
+				-moz-box-shadow: 3px 0px 24px 0px rgba(0,0,0,0.75);
+				box-shadow: 3px 0px 24px 0px rgba(0,0,0,0.75);
+			}
+		</style>
+	</head>
+
+	<body style="height: 100%; background-image: url('assets/wallpaper.jpg'); background-attachment:fixed">
+
+		<!--KONAMI-->
+		<audio id="audioPlayer">
+			<source src="assets/music.mp3">
+		</audio>
+		<script>
+			if (window.addEventListener ) {
+				var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
+				var player = document.querySelector('#audioPlayer');
+
+				window.addEventListener("keydown", function(e){
+					kkeys.push( e.keyCode );
+					if ( kkeys.toString().indexOf( konami ) >= 0 ) {
+						player.play();
+					}
+				}, true);
+			}
+		</script>
+
+		<!--MENU-->
+		<nav id="nav" class="navbar navbar-light fixed-top" style="background-color: #c0392b; width: 15%; height: 100%;">
+			<ul class="navbar-nav mr-auto mybar">
+				<a href="index.html">
+					<img src="assets/logo.png" width="100%">
+				</a>
+				<li class="nav-list">
+					<a class="menu" href="#about" style="border-bottom: 1px solid white;">>  PRESENTATION</a>
+				</li>
+				<li class="nav-item list">
+					<a class="menu" href="#react" style="border-bottom: 1px solid white;">>  COMMENT REAGIR</a>
+				</li>
+				<li class="nav-item list">
+					<a class="menu" href="#should" style="border-bottom: 1px solid white;">>  JE DOIS FAIRE</a>
+				</li>
+				<li class="nav-item list">
+					<a class="menu" href="#donot" style="border-bottom: 1px solid white;">>  JE NE DOIS PAS FAIRE</a>
+				</li>
+				<li class="nav-item list">
+					<a class="menu" href="#team" style="border-bottom: 1px solid white;">>  L'EQUIPE</a>
+				</li>
+			</ul>
+		</nav>
+
+		<!--CONTAINER-->
+		<div class="container">
+
+			<!--BIG TITLE-->
+			<section class="resume-section">
+				<div class="my-auto" style="padding-top: 100px; width: 100%;">
+					<h1 class="bigtitle" style="font-family: 'Audiowide', cursive;" title="comment">HOW TO 
+					<span class="text-color" title="réagir">REACT ?!</span><br/><br/></h1>
+				</div>
+			</section>
+			<div class="row">
+				<div class="col-8">
+
+					<!--PRESENTATION-->
+					<section class="resume-section bottom" id="about">
+						<h2 class="subtitle">>  Présentation</h2>
+						<p>How to <b class ="text-color">react ?!</b> , c'est un site, qui donne des conseils sur ce qu'il faut faire en cas d'accident de la route. How to <b class ="text-color">react ?!</b> , c'est un site qui va aider les personnes confrontées à un accident à réagir comme il faut et faire les bonnes choses. En tant que sapeur-pompier, Corentin nous raconte qu'il est intervenu sur des accidents, ou malheureusement, les témoins ne savaient pas comment réagir, et ne réagissaient pas, ou réagissaient mal.<br/><br/>
+						On se doute bien, que lors d'un accident, les témoins ne vont pas se ruer sur leurs téléphones pour regarder sur internet ce qu'il faut faire, How to <b class ="text-color">react ?!</b> est donc un moyen de prévention, afin de former les gens aux réactions à avoir en cas d'accident.<br/><br/>
+						<i><b>Comment réagir en cas d'accident ? qu'est-ce que je dois et ne dois pas faire ? comment ?"</b></i> Plusieurs questions, auxquelles nous allons répondre.</p>
+					 </section>
+
+					<!--REACTION-->
+					<section class="resume-section bottom" id="react">
+						<h2 class="subtitle">>  Comment réagir ?</h2>
+						 <p>Comment réagir en cas d’accident ? j’appelle les secours ? lesquels, il y a tellement de numéros à retenir !!!<br/>
+						C’est simple :  P.A.S, <b style="color: #c0392b;">P</b>rotéger, <b style="color: #c0392b;">A</b>lerter, <b style="color: #c0392b;">S</b>ecourir<br/>
+						<u>Protéger :</u><br/>
+						On protège la scène à l’aide des triangles de signalisation, 50m en amont et en aval de l’accident, on se met sur le bas-côté de la route, warning et feux de croisement allumé, et on met son gilet haute visibilité.<br/><br/>
+
+						<u>Alerter :</u><br/>
+						<img class="rounded float-right" src="assets/phone.jpg" width="180px" style="margin-left: 5px;">
+						Qui appeler en cas d’un accident de la route ? Les pompiers. Pourquoi ? Car les pompiers sont les seuls à avoir les moyens de réagir 
+						correctement à un accident de la route : matériel de désincarcération, matériels d’extinction d’incendie… Dans tous les cas, les numéros d’urgence sont interconnectés, donc si vous appelez le 18 pour un accident, l’opérateur avisera le SAMU et la Gendarmerie, qui se 
+						déplaceront si besoin.<br/>
+						Que dire au téléphone ?<br/>
+						<li class="po"><u>Identifiez-vous :</u> Nom prénom, votre numéro de téléphone</li>
+						<li class="po"><u>Expliquez où vous êtes et comment accéder au lieu de l’accident :</u> adresse / borne kilométrique</li>
+						<li class="po"><u>Nature de l’accident :</u> accident de voiture, de moto, la voiture est retournée, la moto est dans un ravin</li>
+						<li class="po"><u>Le nombre et l’état des victimes</u></li>
+						<li class="po"><u>Précisez s’il y a des de suraccident</u></li>
+						<li class="po"><u>Ne raccrochez pas le premier</u></li><br/>
+
+						<u>Secourir :</u><br/>
+						Pour ça, nous allons passer à ce qu'il faut, et ne faut pas faire.<br/><br/>
+						</p>
+					</section>
+
+					<!--FAIRE-->
+					<section class="resume-section bottom" id="should">
+						<h2 class="subtitle">>  Je dois faire</h2>
+						<p>Un accident s’est produit, j’ai protégé la scène, j’ai appelé les secours : ils arrivent ! Sachant qu’il faut en moyenne 15 minutes entre le moment où on appelle et le moment où les secours arrivent, on a le temps de s’occuper de / des victimes, non ?<br/><br/>
+
+						Voici les gestes de base que vous pouvez faire, afin d’améliorer ses chances de s’en sortir sans séquelles :<br/>
+						<img class="rounded float-right" src="assets/head.jpg" width="310px" style="margin-left: 5px;">
+						<li class="po"><u>Le maintien tête :</u> c’est simple, il suffit de tenir la tête de la victime droite jusqu’à l’arrivée des secours, et c’est beaucoup plus important que l’on ne le pense. En effet, ça permet de maintenir un axe tête cou tronc et de réduire considérablement le risque de traumatisme du rachis cervical. Si la victime n’a aucun traumatisme extérieur, c’est la seule chose que vous pourrez faire.</li>
+						<li class="po"><u>En cas d’hémorragie :</u> faire un point de compression avec un linge propre, ne rien retirer de la plaie (bout de métal, de verre : RIEN !!!!)</li>
+						<img class="rounded float-right" src="assets/massage.png" width="210px" style="margin-left: 5px;">
+						<li class="po"><u>En cas d’inconscience :</u> S’assurer que la victime respire, et n’avale pas sa langue.</li>
+						<li class="po"><u>La victime ne respire plus = arrêt cardiaque :</u> ne vous posez pas de question, si vous le pouvez, vous sortez la victime de la voiture et commencez un massage cardiaque (pas de bouche-à-bouche). Certes, elle va peut-être subir des traumatismes de la colonne vertebrale, mais c’est moins pire que de mourir.</li><br/>
+						</p>
+					</section>
+
+					<!--NE PAS FAIRE-->
+					<section class="resume-section bottom" id="donot">
+						<h2 class="subtitle">>  Je ne dois pas faire</h2>
+						<p>On vient de voir ce qu’il faut faire, nous allons maintenant voir ce qu’il ne faut (surtout) pas faire.<br/>
+						<li class="po"><u>Déplacer la victime :</u> On ne déplace JAMAIS la victime. Sauf si : danger de mort imminente (un véhicule fonce sur le véhicule accidenté, le véhicule prend feu, la victime fait un arrêt cardiaque...)</li>
+						<li class="po"><u>Retirer le casque d’un motard :</u> On ne retire jamais le casque d’un motard qui a eu un accident, les secours ont des techniques de retrait spécial, qui ne laisse aucune séquelle aux victimes.</li>
+						<li class="po"><u>Ne pas m’arrêter sur un accident :</u> c’est de la non-assistance à personne en danger, vous risquez des poursuites en justice... évidemment, s’il y a déjà 10 personnes autour de la victime, inutile de s’arrêter (sauf si vous êtes secouriste).</li><br/>
+						</p>
+					</section>
+
+					<!--TEAM-->
+					<section class="resume-section bottom" id="team">
+						<h2 class="subtitle">>  L'équipe</h2><br/>
+						<div class="row">
+							<div class="col-4" style="margin-left: 10px;">
+								<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/corentin.jpg" width="200px">
+								<figcaption style="text-align:center; font-style: italic;">Corentin, 18 ans, 1ère année Epitech Strasbourg<br/>
+									<li>Pompier Volontaire depuis 2015</li>
+									<li>Passionné d'informatique</li>
+									<li>Developpement HTML/CSS/JS & textes</li>
+								</figcaption>
+							</div>
+							<div class="col-4" style="margin-left: 150px;">
+								<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/antoine.jpg" width="200px">
+								<figcaption style="text-align:center; font-style: italic;">Antoine, 19 ans, 1ère année Epitech Strasbourg<br/>
+									<li>Passionné de Jeux vidéos, streaming et cinéma</li>
+									<li>Developpemet HTML/CSS & Graphismes</li>
+								</figcaption>
+							</div>
+						</div>
+					</section>
+				</div>
+
+				<!--PHONE NUMBER-->
+				<div class="col-4">
+					<button type="button" class="btn btn-danger marg">Pompiers: 18 <img src="assets/phone.ico" width="26px"></button><br/>
+					<button type="button" class="btn btn-primary marg">Police / Gendarmerie: 17 <img src="assets/phone.ico" width="26px"></button><br/>
+					<button type="button" class="btn btn-info marg">SAMU: 15 <img src="assets/phone.ico" width="26px"></button><br/>
+					<button type="button" class="btn btn-warning marg">Numéro Européen: 112 <img src="assets/phone.ico" width="26px"></button>
+				</div>
+			</div>
+		</div>
+
+		<!--JS-->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	</body>
+</html>

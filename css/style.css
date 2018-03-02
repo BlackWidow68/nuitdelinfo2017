@@ -1,0 +1,72 @@
+html {
+	height: 100%;
+}
+
+.container {
+	background-color:rgba(52, 73, 94, 0.8);
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+	margin-top:200px;
+	margin-bottom:50px;
+	margin-left:20%;
+}
+
+#nav {
+	position: fixed;
+}
+
+.title {
+	font-family: 'Gloria Hallelujah', cursive;
+	color:#34495e;
+	font-size:2.4em;
+}
+
+.menu {
+	color:white;
+	font-size:1.5em;
+	font-family: 'Dosis', sans-serif;
+}
+
+.mybar {
+	text-align: center;
+}
+
+.bigtitle {
+	font-size:6em;
+}
+
+.text-color {
+	color: #e74c3c;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.subtitle {
+	font-family: 'Coustard', serif;
+	text-decoration: underline;
+}
+
+.bottom {
+	padding-bottom: 100px;
+}
+
+.bottom h2 {
+	color: #ecf0f1;
+}
+
+.bottom, .po, p{
+	color: white;
+}
+
+.marg {
+	margin-bottom: 5px;
+	margin-left:30px; 
+	width: 250px; 
+}
+
+.navbar-nav:hover {
+	text-decoration: none;
+}
